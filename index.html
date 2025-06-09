@@ -8,8 +8,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://kit.fontawesome.com/0c0117b675.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
+      .paper_level {
+        /* color: #576c95; */
+        font-weight: bold;
+      }
       .title {
         font-size: 32px;
         color: #111;
@@ -22,7 +27,7 @@
       .cont {
         font-size: 19px;
         color: #333;
-        line-height: 32px;
+        line-height: 34px;
         max-width: 740px;
       }
       .text-theme-color {
@@ -30,6 +35,7 @@
       }
       .bg-theme-100 {
         background-color: rgba(49, 39, 240, 0.1);
+        border: 1px solid rgba(49, 39, 240, 0.3);
       }
       .fa {
         font-size: 20px;
@@ -44,14 +50,19 @@
   </head>
   <body class="flex h-screen text-gray-800">
     <!-- 侧边栏 -->
-    <nav id="sidebar" class="w-48 bg-white border-r border-gray-200 h-screen p-4 hidden flex-col md:flex">
+    <nav
+      id="sidebar"
+      class="w-48 bg-white border-r border-gray-200 h-screen p-4 hidden flex-col md:flex"
+    >
       <ul class="space-y-1">
         <li>
           <a
             href="#profile"
             class="nav-link flex items-center px-3 py-3.5 rounded-full hover:bg-gray-100 text-theme-color font-medium"
           >
-            <div class="w-10 pr-1 flex justify-center"><i class="fa fa-user"></i></div>
+            <div class="w-10 pr-1 flex justify-center">
+              <i class="fa-solid fa-circle-user" style="font-size: 20px"></i>
+            </div>
             <span>个人简介</span></a
           >
         </li>
@@ -61,7 +72,7 @@
             class="nav-link flex items-center px-3 py-3.5 rounded-full hover:bg-gray-100 text-gray-600"
           >
             <div class="w-10 pr-1 flex justify-center">
-              <i class="fa fa-paper-plane text-gray-600"></i>
+              <i class="fa-solid fa-paper-plane" style="font-size: 20px"></i>
             </div>
             <span>研究方向</span></a
           >
@@ -72,7 +83,7 @@
             class="nav-link flex items-center px-3 py-3.5 rounded-full hover:bg-gray-100 text-gray-600"
           >
             <div class="w-10 pr-1 flex justify-center">
-              <i class="fa fa-file-text text-gray-600"></i>
+              <i class="fa-solid fa-address-book" style="font-size: 20px"></i>
             </div>
             <span>招生信息</span></a
           >
@@ -83,7 +94,7 @@
             class="nav-link flex items-center px-3 py-3.5 rounded-full hover:bg-gray-100 text-gray-600"
           >
             <div class="w-10 pr-1 flex justify-center">
-              <i class="fa fa-sticky-note text-gray-600"></i>
+              <i class="fa-solid fa-note-sticky" style="font-size: 20px"></i>
             </div>
             <span>代表论著</span></a
           >
@@ -94,7 +105,7 @@
             class="nav-link flex items-center px-3 py-3.5 rounded-full hover:bg-gray-100 text-gray-600"
           >
             <div class="w-10 pr-1 flex justify-center">
-              <i class="fa fa-book text-gray-600"></i>
+              <i class="fa-solid fa-book-bookmark" style="font-size: 20px"></i>
             </div>
             <span>教学课程</span></a
           >
@@ -105,7 +116,7 @@
             class="nav-link flex items-center px-3 py-3.5 rounded-full hover:bg-gray-100 text-gray-600"
           >
             <div class="w-10 pr-1 flex justify-center">
-              <i class="fa fa-users text-gray-600"></i>
+              <i class="fa-solid fa-user-group" style="font-size: 18px"></i>
             </div>
             <span>团队成员</span></a
           >
@@ -117,7 +128,7 @@
           class="nav-link flex items-center px-3 py-3.5 rounded-full hover:bg-gray-100 text-gray-600"
         >
           <div class="w-10 pr-1 flex justify-center">
-            <i class="fa fa-envelope text-gray-600"></i>
+            <i class="fa-solid fa-envelope" style="font-size: 20px"></i>
           </div>
           <span>联系方式</span></a
         >
@@ -140,11 +151,11 @@
         <div class="flex justify-between items-start">
           <div class="cont cont-lg">
             <h1 class="title">赵阳明</h1>
-            <p class="cont mb-4 font-bold" style="font-size: 21px;">
-              南京大学智能软件与工程学院准聘副教授（特聘研究员），博士生导师。
+            <p class="cont mb-4 font-bold" style="font-size: 21px">
+              南京大学 博士，副教授，博士生导师。
             </p>
             <p class="cont">
-              2008年和2015年毕业于电子科技大学通信与信息工程学院，分别获通信工程工学学士学位以及通信与信息系统工学博士学位。曾先后在贝尔实验室、纽约州立大学布法罗分校从事研究工作。2021年入选中国科学院人才计划B类（即中科院BR计划青年项目）并加入中国科学技术大学任特任研究员。2022年入选安徽省海外引才计划创新项目（即安徽省BR计划）。已在IEEE/ACM ToN、IEEE TPDS、 IEEE TC、 IEEE TMC、 IEEE JSAC、 USENIX NSDI、 IEEE INFOCOM等顶级期刊和会议上发表学术论文70余篇，并主持包括国家自然科学基金面上项目在内的多项科研项目。目前主要研究方向是量子网络协议设计与优化。
+              2015年于电子科技大学获得博士学位，博士期间曾先后在纽约州立大学布法罗分校以及香港科技大学进行访问学习。博士毕业后先后供职于上海贝尔股份有限公司、纽约州立大学布法罗分校、以及中国科学技术大学。入选中科院人才计划B类（青年项目）以及安徽省海外引才计划创新项目。主要研究方向为量子信息技术、网络通信技术。主持多项科研项目，包括国家自然科学基金面上项目、江苏省自然科学基金面上项目、安徽省自然科学基金面上项目等。发表高水平论文80余篇，包括TON、TPDS、TC、TMC、INFOCOM、NSDI等国际一流期刊与会议。
             </p>
             <p class="mt-8">
               <a
@@ -174,19 +185,19 @@
         <div class="w-full overflow-x-auto">
           <div class="flex space-x-4 mb-6">
             <button
-              class="px-6 py-3 text-xl break-keep rounded-full bg-theme-100 text-theme-color font-medium cursor-pointer transition"
+              class="px-6 py-3 text-xl break-keep rounded-full bg-theme-100 text-theme-color font-medium cursor-pointer transition border border-white"
               onclick="showResearchContent('quantum-network')"
             >
               量子网络
             </button>
             <button
-              class="px-6 py-3 text-xl break-keep rounded-full bg-gray-100 text-gray-600 cursor-pointer transition"
+              class="px-6 py-3 text-xl break-keep rounded-full bg-gray-100 text-gray-600 cursor-pointer transition border border-white"
               onclick="showResearchContent('quantum-computing')"
             >
               量子计算
             </button>
             <button
-              class="px-6 py-3 text-xl break-keep rounded-full bg-gray-100 text-gray-600 cursor-pointer transition"
+              class="px-6 py-3 text-xl break-keep rounded-full bg-gray-100 text-gray-600 cursor-pointer transition border border-white"
               onclick="showResearchContent('network-communication')"
             >
               网络通信
@@ -203,17 +214,30 @@
         <!-- 内容块 -->
         <div id="quantum-network" class="research-content active cont">
           <p>
-            量子网络是利用量子力学原理实现信息传输和处理的新型通信范式。其核心在于利用量子叠加和量子纠缠特性，使得量子比特（qubit）能够在网络节点之间以无条件安全的方式分发和交换。通过光子作为载体，量子网络能够实现量子密钥分发（QKD）、量子中继和量子交换机等关键技术，保障信息在传输过程中的不被窃听或篡改。目前，世界各国纷纷建设区域量子网络试验网，并致力于构建量子互联网，以期在分布式量子计算、量子传感和高精度计时等领域取得突破性进展。
+            量子网络数据传输与应用技术通过设计高速可靠的量子通信协议和高效的量子算法，为量子传感、量子传输、量子计算和量子加密等领域提供强有力的技术支持，最终实现量子优越性。该技术的研究不仅推动了量子信息科学的发展，也为未来的量子互联网奠定了基础。<br />
+            量子网络的应用广泛且潜力巨大，包括：<br />
+            <span style="color: #000; font-weight: bold">量子传感：</span
+            >提高测量精度和灵敏度。<br />
+            <span style="color: #000; font-weight: bold">量子传输：</span
+            >实现信息的安全、高效传输。<br />
+            <span style="color: #000; font-weight: bold">量子计算：</span
+            >增强计算能力，解决传统计算机无法处理的问题。<br />
+            <span style="color: #000; font-weight: bold">量子加密：</span
+            >提供安全的数据传输，保护信息隐私。
           </p>
         </div>
         <div id="quantum-computing" class="research-content cont hidden">
           <p>
-            量子计算是一种基于量子力学原理的新型计算范式，与传统经典计算机不同，量子计算机利用量子叠加和纠缠实现对大规模并行计算的天然支持。量子位能够同时处于“0”和“1”两种状态，使得量子算法在求解特定问题（如质因数分解、优化问题、模拟量子体系等）时具有指数级加速潜力。当前，超导量子比特、离子阱量子比特、光学量子比特等多种技术路线并行发展，各大科研机构和科技公司正加速推动量子硬件规模化、纠错技术完善化以及量子软件生态建设，以期在不远的将来实现对经典计算机的实质性超越。
+            量子计算是一种基于量子力学原理的新型计算范式，与传统经典计算机不同，量子计算机利用量子叠加和纠缠实现对大规模并行计算的天然支持。量子位能够同时处于“0”和“1”两种状态，使得量子算法在求解特定问题（如质因数分解、优化问题、模拟量子体系等）时具有指数级加速潜力。<br />当前，超导量子比特、离子阱量子比特、光学量子比特等多种技术路线并行发展，各大科研机构和科技公司正加速推动量子硬件规模化、纠错技术完善化以及量子软件生态建设，以期在不远的将来实现对经典计算机的实质性超越。
           </p>
         </div>
         <div id="network-communication" class="research-content cont hidden">
           <p>
-            网络通信是指借助物理介质与协议标准，实现计算机与各种智能终端之间信息交换的技术体系。它包括网络体系结构、传输协议、路由算法、差错控制、网络安全等多方面内容，是现代互联网、物联网、移动通信等应用赖以支撑的基础。随着5G/6G、边缘计算和软件定义网络（SDN）等新兴技术的快速演进，网络通信在带宽、时延、可靠性和智能化管理方面不断突破，以满足日益增长的数据流量需求和多样化的业务场景。同时，网络通信技术还在智慧城市、工业互联网和车联网等领域发挥着关键作用，推动社会生产和生活方式的深刻变革。
+            RDMA（远程直接内存访问）是一种网络技术，允许计算节点在不经过对端 CPU
+            干预的情况下，直接将数据从本地内存传输到远程内存。它能够显著降低延迟、减少 CPU
+            占用，并提高大规模分布式计算或存储系统的数据传输性能。<br />
+            对于高性能计算（HPC）、分布式存储和大模型训练等场景，RDMA 可减少传统 TCP/IP
+            协议栈带来的开销，从而提升整体系统吞吐和响应速度。
           </p>
         </div>
         <div id="machine-learning" class="research-content cont hidden">
@@ -229,7 +253,19 @@
       <section id="admission" class="max-w-4xl mx-auto mb-0 py-8">
         <h2 class="title">招生信息</h2>
         <div class="cont">
-          （待补充…）
+          课题组每年招收硕士2-5名，博士2名，欢迎加入我们的大家庭。你可以: <br />
+          <span style="font-weight: bold">兴趣驱动：</span
+          >对本课题组研究方向有浓厚的兴趣，致力于在相关方向开展有创新性的研究与应用探索。<br />
+          <span style="font-weight: bold">技术驱动：</span
+          >掌握通用数学建模、实验环境搭建和数据处理能力、良好的英文读写技能等。目前课题组在相关方向已有积淀，可更好支持新成员的快速和系统掌握这些技术和方法。<br />
+          <span style="font-weight: bold">自由驱动:</span>
+          给与学生充分自由思考和发挥的空间，每一个故事都离不开导师与学生的“双向奔赴”。<br />
+        </div>
+        <div class="cont" style="margin-top: 30px">
+          本课题组致力于打造一个开放宽松理念下追求卓越和高品质科研创新的文化，寻觅意义，愉悦生活，向光而行！
+        </div>
+        <div class="cont">
+          <!-- （待补充…） -->
           <!-- <p>1. 数学好、英语好、代码能力强、随时听候召唤！！！！！！！</p>
           咳咳，specifically，<br />数学好——会解方程、会推不等式、概率80分？<br />英语好——能在有字典的情况下读懂英文文献；<br />代码能力强——for,
           if, while都知道？那你是挺强的了；<br />随时听候召唤——仅限正常工作时间(的确会有deadline造成加班的情况，一年有那么几回吧)。
@@ -244,49 +280,50 @@
 
       <!-- 代表论著 占位 -->
       <section id="publications" class="max-w-4xl mx-auto mb-0 py-8">
-        <h2 class="title">代表论著</h2>
+        <h2 class="title">部分科研论文</h2>
         <div class="cont">
           <li>
             Beyond Entanglement Routing: Source Assignment and All-Optical Switching-Based
-            Distribution <span class="">[ToN, CCF A]</span>
+            Distribution <span class="paper_level">[ToN, CCF A]</span>
           </li>
           <li>
             Dynamic Entanglement Routing Based on Stream Processing for Quantum Networks
-            <span class="">[ToN, CCF A]</span>
+            <span class="paper_level">[ToN, CCF A]</span>
           </li>
           <li>
             EPS Placement and Lightweight Entanglement Routing for Quantum Data Networks
-            <span class="">[ICDCS, CCF B]</span>
+            <span class="paper_level">[ICDCS, CCF B]</span>
           </li>
           <li>
             Routing and wavelength assignment for entanglement swapping of photonic qubits
-            <span class="">[INFOCOM, CCF A]</span>
+            <span class="paper_level">[INFOCOM, CCF A]</span>
           </li>
           <li>
             Routing and Photon Source Provisioning in Quantum Key Distribution Networks
-            <span class="">[INFOCOM, CCF A]</span>
+            <span class="paper_level">[INFOCOM, CCF A]</span>
           </li>
           <li>
             An asynchronous transport protocol for quantum data networks
-            <span class="">[JSAC, CCF A]</span>
+            <span class="paper_level">[JSAC, CCF A]</span>
           </li>
           <li>
             Segmented entanglement establishment with all-optical switching in quantum networks
-            <span class="">[ToN, CCF A]</span>
+            <span class="paper_level">[ToN, CCF A]</span>
           </li>
           <li>
             DFS: Joint data formatting and sparsification for efficient communication in Distributed
-            Machine Learning <span class="">[CN, CCF B]</span>
+            Machine Learning <span class="paper_level">[CN, CCF B]</span>
           </li>
           <li>
             Asynchronous entanglement provisioning and routing for distributed quantum computing
-            <span class="">[INFOCOM, CCF A]</span>
+            <span class="paper_level">[INFOCOM, CCF A]</span>
           </li>
           <li>
             Distributed transport protocols for quantum data networks
-            <span class="">[ToN, CCF A]</span>
+            <span class="paper_level">[ToN, CCF A]</span>
           </li>
         </div>
+        <div style="margin-top: 30px; color: #888">* 更多相关论文可以访问Google Scholar</div>
       </section>
 
       <!-- 教学课程 占位 -->
@@ -298,7 +335,7 @@
               href="https://nju-zhaoym.github.io/InternetComputing/"
               class="underline"
               target="_blank"
-              >2025年春-互联网计算</a
+              >2025年春-互联网计算 →</a
             >
           </li>
         </div>
@@ -306,21 +343,72 @@
 
       <!-- 团队成员 占位 -->
       <section id="team" class="max-w-4xl mx-auto mb-0 py-8">
-        <h2 class="title">团队成员</h2>
+        <h2 class="title">课题组建设</h2>
         <div class="cont">
-          待补充…
-          <!-- <img src="./team.jpg" class="" style="width: 450px" alt="" srcset="" /> -->
+          <!-- 待补充… -->
+          <img
+            src="./wxy.jpg"
+            class=""
+            style="width: 650px; border-radius: 10px"
+            alt=""
+            srcset=""
+          />
+          <div style="margin-top: 10px; color: #888">INFOCOM 2025 · 王肖宇同学</div>
+          <img
+            src="./zfr.jpg"
+            class=""
+            style="width: 650px; border-radius: 10px; margin-top: 20px"
+            alt=""
+            srcset=""
+          />
+          <div style="margin-top: 10px; color: #888">IWQoS 2024 · 湛馥榕同学</div>
+          <img
+            src="./share.jpg"
+            class=""
+            style="width: 650px; margin-top: 20px; border-radius: 10px"
+            alt=""
+            srcset=""
+          />
+          <div style="margin-top: 10px; color: #888">量子计算 · 相关论文分享</div>
         </div>
       </section>
 
       <!-- 联系方式 占位 -->
       <section id="contact" class="max-w-4xl mx-auto mb-30 py-8">
         <h2 class="title">联系方式</h2>
-        <div class="cont">
+        <div class="cont" style="margin-top: 30px">
           <p>邮箱：ymzhao@nju.edu.cn</p>
           <p>地址：苏州市太湖大道1520号</p>
           <p>办公地址：南雍楼西230</p>
           <p>邮编：215163</p>
+        </div>
+        <div
+          class="px-8 py-6 mt-28 rounded-2xl text-lg text-gray-500 border border-gray-300"
+          style="background: #eee; max-width: 600px; line-height: 32px"
+        >
+          <div class="w-10 pr-1 flex justify-center">
+            <i
+              class="fa fa-quote-right"
+              style="
+                font-size: 50px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                color: #aaa;
+              "
+              aria-hidden="true"
+            ></i>
+          </div>
+          To this end，引用来自某科技公司的招募宣言：<br /><br />各位敢于不断从零开始的人。
+          <br />爱唱反调，<br />
+          讨厌合拍的人。 <br />各位不懂得随大流， <br />不看规则的眼色， <br />能投入新世界，<br />
+          重塑自我的人。<br />
+          各位睁眼白日梦，<br />
+          闭眼天马行空，<br />
+          满脑子理想和幻想的人。 <br />各位能在一片草地里， 分辨出万千种绿色的人。<br />
+          能为现实的死结，<br />
+          寻求答案的人。 <br />你能飞得比自己想象的更高，更远。<br />
+          你，就是我们寻找的人。
         </div>
       </section>
     </main>
